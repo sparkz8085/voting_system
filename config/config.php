@@ -64,6 +64,9 @@ if (getenv('DB_USER') !== false) {
 if (getenv('DB_PASSWORD') !== false) {
     $config['database']['password'] = (string) getenv('DB_PASSWORD');
 }
+if (getenv('DB_PORT') !== false) {
+    $config['database']['port'] = (int) getenv('DB_PORT');
+}
 
 date_default_timezone_set((string) $config['app']['timezone']);
 

@@ -252,6 +252,37 @@ end-to-end requests and database assertions:
 
 ---
 
+## Deployment on Render
+
+The repository ships with a production-ready **Dockerfile** (`php:8.2-apache`) and is prepared for deployment on [Render](https://render.com).
+
+- The image installs PHP 8.2 with the required extensions (`pdo_mysql`, `mbstring`) and enables the Apache modules required by the application `.htaccess`.
+- Apache listens on the port provided by Render through the `PORT` environment variable (defaults to `10000`).
+- The document root is `/var/www/html` and the application source is copied there, preserving the existing directory structure and `.htaccess` support (with `AllowOverride All`).
+
+### Environment variables for the Render web service
+
+| Variable        | Purpose                              | Default     |
+| --------------- | ----------------------------------- | ----------- |
+| `PORT`          | Apache listen port                  | `10000`     |
+| `DB_HOST`       | MySQL host                          | –           |
+| `DB_PORT`       | MySQL port                          | `3306`      |
+| `DB_NAME`       | Database name                       | –           |
+| `DB_USER`       | Database user                       | –           |
+| `DB_PASSWORD`   | Database password                   | –           |
+| `APP_DEBUG`     | Debug mode                          | `false`     |
+
+`APP_DEBUG` remains disabled by default; no database credentials are hardcoded — they are supplied through environment variables.
+
+### Deploy steps
+
+1. Push this repository to GitHub.
+2. Create a new **Web Service** on Render using the **Docker** runtime.
+3. Set the environment variables listed above (at minimum the database credentials and `APP_DEBUG=false`).
+4. Deploy. Render builds the image and runs Apache on the injected `PORT`.
+
+---
+
 ## Limitations and disclaimer
 
 CampusVote is an **academic prototype** built for coursework and demonstration.
