@@ -1,0 +1,24 @@
+# Version control
+.git
+.gitignore
+.gitattributes
+
+# Local environment overrides and secrets
+config/config.local.php
+
+# Local development artifacts
+*.log
+tmp/
+cache/
+.env
+
+# Docker
+Dockerfile
+.dockerignore
+docker-compose*.yml
+
+# Documentation-only / tooling folders not required at runtime
+tests/
+tools/
+README.md
+render.yaml
