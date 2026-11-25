@@ -1,0 +1,6 @@
+# Local environment overrides — never commit real credentials.
+config/config.local.php
+
+# Local artifacts
+*.log
+/tmp

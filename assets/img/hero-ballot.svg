@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 620" role="img" aria-labelledby="heroTitle heroDesc">
+  <title id="heroTitle">A completed ballot being verified</title>
+  <desc id="heroDesc">An illustrated ballot card with a selected candidate, a secure ballot box, and a participation confirmation badge.</desc>
+  <defs>
+    <linearGradient id="blob" x1="80" y1="40" x2="580" y2="580" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#eef2ff"/>
+      <stop offset=".55" stop-color="#e0e7ff"/>
+      <stop offset="1" stop-color="#ccfbf1"/>
+    </linearGradient>
+    <linearGradient id="card" x1="120" y1="100" x2="460" y2="500" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#f8fafc"/>
+    </linearGradient>
+    <linearGradient id="box" x1="150" y1="370" x2="470" y2="570" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4f46e5"/>
+      <stop offset="1" stop-color="#6d28d9"/>
+    </linearGradient>
+    <linearGradient id="badge" x1="390" y1="420" x2="580" y2="570" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0f766e"/>
+      <stop offset="1" stop-color="#10b981"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="22" stdDeviation="24" flood-color="#312e81" flood-opacity=".16"/>
+    </filter>
+    <filter id="softShadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#1e1b4b" flood-opacity=".20"/>
+    </filter>
+    <filter id="badgeShadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#064e3b" flood-opacity=".22"/>
+    </filter>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0v32" fill="none" stroke="#4f46e5" stroke-opacity=".055"/>
+    </pattern>
+  </defs>
+
+  <circle cx="320" cy="310" r="288" fill="url(#blob)"/>
+  <circle cx="320" cy="310" r="288" fill="url(#grid)"/>
+  <circle cx="552" cy="126" r="9" fill="#fbbf24"/>
+  <circle cx="92" cy="464" r="7" fill="#2dd4bf"/>
+  <path d="M536 218c18 0 24-7 24-24 0 17 7 24 24 24-17 0-24 7-24 24 0-17-6-24-24-24Z" fill="#c7d2fe"/>
+  <path d="M107 178c12 0 16-5 16-16 0 11 4 16 16 16-12 0-16 5-16 16 0-11-4-16-16-16Z" fill="#99f6e4"/>
+
+  <g filter="url(#cardShadow)" transform="rotate(-4 300 290)">
+    <rect x="132" y="92" width="336" height="378" rx="28" fill="url(#card)"/>
+    <rect x="132" y="92" width="336" height="378" rx="28" fill="none" stroke="#e2e8f0"/>
+    <rect x="164" y="126" width="88" height="10" rx="5" fill="#c7d2fe"/>
+    <rect x="164" y="147" width="146" height="8" rx="4" fill="#e2e8f0"/>
+    <rect x="158" y="188" width="284" height="65" rx="14" fill="#eef2ff"/>
+    <circle cx="194" cy="220" r="20" fill="#4f46e5"/>
+    <path d="M185 220.5 191 227l13-14" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="226" y="204" width="110" height="10" rx="5" fill="#4338ca" opacity=".72"/>
+    <rect x="226" y="223" width="76" height="8" rx="4" fill="#a5b4fc"/>
+    <circle cx="412" cy="220" r="12" fill="#4f46e5"/>
+    <circle cx="412" cy="220" r="5" fill="#fff"/>
+
+    <rect x="158" y="269" width="284" height="57" rx="14" fill="#fff" stroke="#e5e7eb"/>
+    <circle cx="194" cy="297" r="18" fill="#ccfbf1"/>
+    <circle cx="194" cy="297" r="8" fill="#14b8a6"/>
+    <rect x="226" y="284" width="94" height="9" rx="4.5" fill="#cbd5e1"/>
+    <rect x="226" y="301" width="62" height="7" rx="3.5" fill="#e2e8f0"/>
+    <circle cx="412" cy="297" r="11" fill="none" stroke="#d1d5db" stroke-width="2"/>
+
+    <rect x="158" y="340" width="284" height="57" rx="14" fill="#fff" stroke="#e5e7eb"/>
+    <circle cx="194" cy="368" r="18" fill="#fef3c7"/>
+    <circle cx="194" cy="368" r="8" fill="#f59e0b"/>
+    <rect x="226" y="355" width="112" height="9" rx="4.5" fill="#cbd5e1"/>
+    <rect x="226" y="372" width="72" height="7" rx="3.5" fill="#e2e8f0"/>
+    <circle cx="412" cy="368" r="11" fill="none" stroke="#d1d5db" stroke-width="2"/>
+
+    <rect x="164" y="418" width="168" height="9" rx="4.5" fill="#e2e8f0"/>
+    <rect x="346" y="409" width="96" height="38" rx="11" fill="#0f766e"/>
+    <path d="m366 428 6 6 13-13" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="393" y="422" width="32" height="7" rx="3.5" fill="#fff" opacity=".78"/>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="196" y="392" width="292" height="176" rx="26" fill="url(#box)"/>
+    <rect x="196" y="392" width="292" height="28" rx="14" fill="#4338ca"/>
+    <rect x="286" y="376" width="112" height="26" rx="13" fill="#141a44"/>
+    <rect x="305" y="384" width="74" height="7" rx="3.5" fill="#a5b4fc" opacity=".55"/>
+    <path d="M196 452h292" stroke="#a5b4fc" stroke-opacity=".18"/>
+    <text x="342" y="520" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="23" font-weight="700" fill="#fff" letter-spacing=".3">CampusVote</text>
+    <text x="342" y="547" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="500" fill="#c7d2fe" letter-spacing="1.5">ONE VOTER · ONE BALLOT</text>
+  </g>
+
+  <g filter="url(#badgeShadow)">
+    <rect x="414" y="482" width="186" height="90" rx="22" fill="url(#badge)"/>
+    <circle cx="457" cy="527" r="23" fill="#fff" opacity=".17"/>
+    <path d="m445 527 8 8 16-18" fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="491" y="521" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#fff">Vote recorded</text>
+    <text x="491" y="541" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="500" fill="#d1fae5">Receipt generated</text>
+  </g>
+
+  <g transform="translate(94 352) rotate(-12)">
+    <rect width="108" height="42" rx="12" fill="#fff" filter="url(#cardShadow)"/>
+    <circle cx="24" cy="21" r="11" fill="#e0f2fe"/>
+    <path d="M19 21.5 22 25l8-9" fill="none" stroke="#0284c7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="42" y="14" width="48" height="6" rx="3" fill="#cbd5e1"/>
+    <rect x="42" y="25" width="32" height="5" rx="2.5" fill="#e2e8f0"/>
+  </g>
+</svg>
